@@ -1,3 +1,12 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
+title: Rémy Maucourt
+email: remy.maucourt@proton.me
+
+# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl: "" # the subpath of your site, e.g. /blog
+
+collections_dir: _content
+
+collections:
+  - experiences
+  - formations
+  - side_projects
