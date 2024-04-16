@@ -3,22 +3,48 @@ layout: default
 lang: fr
 ---
 
-<h1>Rémy Maucourt</h1>
+<main class="main-container">
+    <div class="content-container">
+        <header class="header">
+            <h1 class="main-title">Rémy Maucourt</h1>
 
-<h2>{{ site.data[site.active_lang].strings.exp }}</h2>
+            {% for lang in site.languages %}
+                <a
+                    {% if lang == site.active_lang %}style="font-weight: bold;"{% endif %}
+                    {% static_href %}href="{% if lang == site.default_lang %}{{site.baseurl}}/{% else %}{{site.baseurl}}/{{ lang }}{% endif %}"{% endstatic_href %}
+                >{{ lang }}</a>
+            {% endfor %}
+        </header>
 
-{% assign experiences = site.experiences | where:'lang', site.active_lang %}
+        <div class="intro-container">
+            {% assign intro = site.intro | where:'lang', site.active_lang | first %}
 
-{% for item in experiences %}
-    <div>
-        <div>{{ item.company}}</div>
-        <div>{{ item.content }}</div>
+            <div>{{ intro.content }}</div>
+        </div>
+
+        <div class="experience-container">
+            <h2 class="secondary-title">{{ site.data[site.active_lang].strings.exp }}</h2>
+
+            {% assign experiences = site.experiences | where:'lang', site.active_lang %}
+
+            {% for item in experiences %}
+                <div>
+                    <div>{{ item.company }}</div>
+                    <div>{{ item.content }}</div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="formation-container">
+            <h2 class="secondary-title">{{ site.data[site.active_lang].strings.formation }}</h2>
+
+            {% assign formations = site.formations | where:'lang', site.active_lang %}
+
+            {% for item in formations %}
+                <div>
+                    <div>{{ item.school}}</div>
+                </div>
+            {% endfor %}
+        </div>
     </div>
-{% endfor %}
-
-{% for lang in site.languages %}
-    <a
-        {% if lang == site.active_lang %}style="font-weight: bold;"{% endif %}
-        {% static_href %}href="{% if lang == site.default_lang %}{{site.baseurl}}/{% else %}{{site.baseurl}}/{{ lang }}{% endif %}"{% endstatic_href %}
-    >{{ lang }}</a>
-{% endfor %}
+</div>
