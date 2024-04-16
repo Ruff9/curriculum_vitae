@@ -1,6 +1,7 @@
 ---
 company: Believe
 title: Web developper
+lang: fr
 ---
 
-Text test 1
+Texte en français Believe

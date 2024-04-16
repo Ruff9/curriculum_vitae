@@ -2,5 +2,9 @@ source 'https://rubygems.org'
 
 # gem 'jekyll', '4.4.3'
 
-gem "github-pages", group: :jekyll_plugins
+group :jekyll_plugins do
+    gem "github-pages"
+    gem "jekyll-polyglot"
+end
+
 gem "webrick", "~> 1.8"

@@ -1,6 +1,7 @@
 ---
 company: Ministère de la justice
 title: Lead developper
+lang: fr
 ---
 
-Text test 2
+Texte en français MSJ

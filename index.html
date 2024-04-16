@@ -1,11 +1,24 @@
 ---
 layout: default
+lang: fr
 ---
 
 <h1>Rémy Maucourt</h1>
 
-<h2>Experiences</h2>
+<h2>{{ site.data[site.active_lang].strings.exp }}</h2>
 
-{% for item in site.experiences %}
-    <div>{{ item.company}}</div>
+{% assign experiences = site.experiences | where:'lang', site.active_lang %}
+
+{% for item in experiences %}
+    <div>
+        <div>{{ item.company}}</div>
+        <div>{{ item.content }}</div>
+    </div>
+{% endfor %}
+
+{% for lang in site.languages %}
+    <a
+        {% if lang == site.active_lang %}style="font-weight: bold;"{% endif %}
+        {% static_href %}href="{% if lang == site.default_lang %}{{site.baseurl}}/{% else %}{{site.baseurl}}/{{ lang }}{% endif %}"{% endstatic_href %}
+    >{{ lang }}</a>
 {% endfor %}

@@ -4,6 +4,15 @@ email: remy.maucourt@proton.me
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # baseurl: "" # the subpath of your site, e.g. /blog
 
+plugins:
+  - jekyll-polyglot
+
+languages: ["fr", "en"]
+default_lang: "fr"
+lang_from_path: true
+exclude_from_localization: ["assets"]
+parallel_localization: true
+
 collections_dir: _content
 
 collections:
