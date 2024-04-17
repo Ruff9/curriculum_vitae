@@ -6,16 +6,11 @@
   color: $base-font-color;
   font-family: $base-font;
 
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
   padding-top: 20px;
   // font-family: "Montserrat", sans-serif;
 
   @media (min-width: $width-1) {
-    justify-content: center;
-    padding-top: 0;
+    padding-top: 30px;
   }
 }
 
@@ -23,14 +18,21 @@
   background-color: white;
   padding: 10px;
   width: 95%;
+  margin: auto;
 
   @media (min-width: $width-1) {
-    width: 500px;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 2fr
   }
 }
 
 .header {
   border: 2px solid red;
+
+  @media (min-width: $width-1) {
+    grid-column: 1 / 3;
+  }
 }
 
 .main-title {
@@ -47,16 +49,37 @@
   p {
     margin-bottom: 5px;
   }
+
+  @media (min-width: $width-1) {
+    grid-column: 1;
+  }
 }
 
 .stack-container {
   border: 2px solid violet;
+
+  @media (min-width: $width-1) {
+    grid-column: 1;
+  }
 }
 
 .experience-container {
   border: 2px solid blue;
+
+  p {
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: $width-1) {
+    grid-column: 2;
+    grid-row: 2/5;
+  }
 }
 
 .formation-container {
   border: 2px solid green;
+
+  @media (min-width: $width-1) {
+    grid-column: 1;
+  }
 }

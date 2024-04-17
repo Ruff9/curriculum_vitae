@@ -1,5 +1,5 @@
 ---
-school: Simplon
-title: Lead developper
 lang: fr
+school: Simplon
+degree: Lead developper
 ---

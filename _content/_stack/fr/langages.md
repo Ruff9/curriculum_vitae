@@ -8,6 +8,6 @@ Ruby (Rails, Sinatra, Jekyll, Thor)
 
 Python (Django, Flask)
 
-JavaScript (ES6, Node, Vue, React, Backbone, TypeScript)
+JavaScript (ES6, Node, Express, Vue, React, Backbone, TypeScript)
 
 HTML5, CSS3 (Sass, Stylus)

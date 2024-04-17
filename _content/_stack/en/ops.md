@@ -4,4 +4,4 @@ title: Ops
 position: 2
 ---
 
-Docker, Kubernetes, GCP, Scalingo, CircleCI, Github actions, Jenkins
+Docker, Kubernetes, GCP, OVH, Scalingo, Heroku, CircleCI, Github actions, Jenkins, Github pages
