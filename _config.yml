@@ -16,7 +16,8 @@ parallel_localization: true
 collections_dir: _content
 
 collections:
+  - intro
+  - stack
   - experiences
   - formations
   - side_projects
-  - intro

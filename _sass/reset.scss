@@ -99,3 +99,13 @@ meter {
 :where(dialog:modal) {
     all: revert;
 }
+
+// Added to restore markdown feature for **strong** word and *italic* word
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}

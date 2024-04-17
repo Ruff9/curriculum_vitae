@@ -7,6 +7,7 @@ lang: fr
     <div class="content-container">
         <header class="header">
             <h1 class="main-title">Rémy Maucourt</h1>
+            <div class="subtitle">{{ site.data[site.active_lang].strings.subtitle }}</div>
 
             {% for lang in site.languages %}
                 <a
@@ -16,14 +17,27 @@ lang: fr
             {% endfor %}
         </header>
 
-        <div class="intro-container">
+        <section class="intro-container">
             {% assign intro = site.intro | where:'lang', site.active_lang | first %}
 
-            <div>{{ intro.content }}</div>
-        </div>
+            {{ intro.content }}
+        </section>
 
-        <div class="experience-container">
-            <h2 class="secondary-title">{{ site.data[site.active_lang].strings.exp }}</h2>
+        <section class="stack-container">
+            <h2 class="secondary-title">{{ site.data[site.active_lang].strings.stack }}</h2>
+
+            {% assign stack = site.stack | where:'lang', site.active_lang | sort: "position" %}
+
+            {% for item in stack %}
+                <div>
+                    <div>{{ item.title }}</div>
+                    <div>{{ item.content }}</div>
+                </div>
+            {% endfor %}
+        </section>
+
+        <section class="experience-container">
+            <h2 class="secondary-title">{{ site.data[site.active_lang].strings.experience }}</h2>
 
             {% assign experiences = site.experiences | where:'lang', site.active_lang %}
 
@@ -33,9 +47,9 @@ lang: fr
                     <div>{{ item.content }}</div>
                 </div>
             {% endfor %}
-        </div>
+        </section>
 
-        <div class="formation-container">
+        <section class="formation-container">
             <h2 class="secondary-title">{{ site.data[site.active_lang].strings.formation }}</h2>
 
             {% assign formations = site.formations | where:'lang', site.active_lang %}
@@ -45,6 +59,6 @@ lang: fr
                     <div>{{ item.school}}</div>
                 </div>
             {% endfor %}
-        </div>
+        </section>
     </div>
 </div>
