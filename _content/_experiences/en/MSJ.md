@@ -1,6 +1,6 @@
 ---
 lang: en
-company: beta.gouv / Ministère de la justice
+company: beta.gouv / French Ministry of Justice
 role: Lead developper
 start_date: 2021-06-01
 end_date: 2022-09-30

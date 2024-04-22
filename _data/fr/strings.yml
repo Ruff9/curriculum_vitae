@@ -2,3 +2,22 @@ subtitle: Développeur web fullstack senior
 stack: Stack
 experience: Expérience
 formation: Formation
+
+year: an
+years: ans
+month: mois
+months: mois
+
+months_list:
+  january: Janvier
+  february: Février
+  march: Mars
+  april: Avril
+  may: Mai
+  june: Juin
+  july: Juillet
+  august: Août
+  september: Septembre
+  october: Octobre
+  november: Novembre
+  december: Décembre

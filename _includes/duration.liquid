@@ -1,0 +1,27 @@
+{% assign start_date = include.experience.start_date %}
+{% assign end_date = include.experience.end_date %}
+
+{% assign start_days = start_date | date: "%s" | divided_by: 86400 %}
+{% assign end_days = end_date | default: 'now' | date: "%s" | divided_by: 86400 %}
+{% assign diff_days = end_days | minus: start_days %}
+
+{% assign duration_years = diff_days | divided_by: 365.25 | floor %}
+{% assign duration_month = diff_days | modulo: 365.25 | divided_by: 30.4375 | round %}
+
+{% if duration_years > 1 %}
+    {% assign year_string = site.data[site.active_lang].strings.years %}
+{% else %}
+    {% assign year_string = site.data[site.active_lang].strings.year %}
+{% endif %}
+
+{% if duration_month > 1 %}
+    {% assign month_string = site.data[site.active_lang].strings.months %}
+{% else %}
+    {% assign month_string = site.data[site.active_lang].strings.month %}
+{% endif %}
+
+{% if duration_years > 0 %}
+    ({{ duration_years }} {{ year_string }} {{ duration_month }} {{ month_string }})
+{% else %}
+    ({{ duration_month }} {{ month_string }})
+{% endif %}

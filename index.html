@@ -36,14 +36,19 @@ lang: fr
             {% endfor %}
         </section>
 
-        <section class="experience-container">
+        <section class="experiences-container">
             <h2 class="secondary-title">{{ site.data[site.active_lang].strings.experience }}</h2>
 
-            {% assign experiences = site.experiences | where:'lang', site.active_lang %}
+            {% assign experiences = site.experiences | where:'lang', site.active_lang | sort: "start_date" | reverse %}
 
             {% for item in experiences %}
-                <div>
-                    <div>{{ item.company }}</div>
+                <div class="experience-container">
+                    <h3 class="experience-company">{{ item.company }}</h3>
+                    <div class="experience-title">{{ item.role }}</div>
+                    <div class="experience-period">
+                        {% include date_format.liquid raw_date=item.start_date %} - {% include date_format.liquid raw_date=item.end_date %} {% include duration.liquid experience=item %}
+                    </div>
+
                     <div>{{ item.content }}</div>
                 </div>
             {% endfor %}
