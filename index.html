@@ -57,12 +57,10 @@ lang: fr
         <section class="formation-container">
             <h2 class="secondary-title">{{ site.data[site.active_lang].strings.formation }}</h2>
 
-            {% assign formations = site.formations | where:'lang', site.active_lang %}
+            {% assign formations = site.formations | where:'lang', site.active_lang | sort: "year" | reverse %}
 
             {% for item in formations %}
-                <div>
-                    <div>{{ item.school}}</div>
-                </div>
+                <div>{{item.year}} {{ item.degree }}, {{ item.school }}</div>
             {% endfor %}
         </section>
     </div>
