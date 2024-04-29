@@ -1,55 +1,119 @@
 .main-container {
   width: 100vw;
 
-  background-color: $background-color;
+  background-color: $background;
   color: $base-font-color;
   font-family: $base-font;
 
   padding-top: 20px;
+  padding-bottom: 30px;
   // font-family: "Montserrat", sans-serif;
 
-  @media (min-width: $width-1) {
+  @media (min-width: $mobile-width) {
     padding-top: 30px;
   }
 }
 
 .content-container {
-  background-color: white;
+  background-color: $text-background;
   padding: 10px;
   width: 95%;
   margin: auto;
 
-  @media (min-width: $width-1) {
-    max-width: 900px;
+  @media (min-width: $mobile-width) {
+    max-width: 700px;
+    padding: 15px;
   }
 }
 
 .header {
-  border: 2px solid red;
+  margin-bottom: 15px;
+
+  @media (min-width: $mobile-width) {
+    margin-bottom: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .main-title {
   font-size: 2em;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.langage-selector {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $mobile-width) {
+    margin-top: 0;
+  }
+}
+
+.langage-link {
+  &:first-of-type {
+    margin-right: 20px;
+
+    @media (min-width: $mobile-width) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.selected-langage {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 .secondary-title {
   font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
 .intro-container {
-  border: 2px solid orange;
+  margin-bottom: 20px;
 
   p {
     margin-bottom: 5px;
   }
+
+  @media (min-width: $mobile-width) {
+    text-align: justify;
+  }
 }
 
 .stack-container {
-  border: 2px solid violet;
+  margin-bottom: 20px;
+}
+
+.stack-item-container {
+  margin-bottom: 10px;
+
+  @media (min-width: $mobile-width) {
+    display: flex;
+  }
+}
+
+.stack-item-title {
+  margin-bottom: 10px;
+  font-weight: bold;
+
+  @media (min-width: $mobile-width) {
+    margin-bottom: 0;
+    font-weight: normal;
+    flex-basis: 120px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
 }
 
 .experiences-container {
-  border: 2px solid blue;
+  margin-bottom: 20px;
 
   p {
     margin-bottom: 5px;
@@ -57,17 +121,18 @@
 }
 
 .experience-container {
-  margin-top: 10px;;
+  margin-bottom: 15px;
+
+  @media (min-width: $mobile-width) {
+    text-align: justify;
+  }
 }
 
 .experience-company {
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .experience-period {
   margin-bottom: 5px;
-}
-
-.formation-container {
-  border: 2px solid green;
 }

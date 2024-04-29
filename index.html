@@ -6,15 +6,19 @@ lang: fr
 <main class="main-container">
     <div class="content-container">
         <header class="header">
-            <h1 class="main-title">Rémy Maucourt</h1>
-            <div class="subtitle">{{ site.data[site.active_lang].strings.subtitle }}</div>
+            <div class="header-title-container">
+                <h1 class="main-title">Rémy Maucourt</h1>
+                <div class="subtitle">{{ site.data[site.active_lang].strings.subtitle }}</div>
+            </div>
 
-            {% for lang in site.languages %}
-                <a
-                    {% if lang == site.active_lang %}style="font-weight: bold;"{% endif %}
-                    {% static_href %}href="{% if lang == site.default_lang %}{{site.baseurl}}/{% else %}{{site.baseurl}}/{{ lang }}{% endif %}"{% endstatic_href %}
-                >{{ lang }}</a>
-            {% endfor %}
+            <div class="langage-selector">
+                {% for lang in site.languages %}
+                    <a
+                        class="langage-link {% if lang == site.active_lang %}selected-langage{% endif %}"
+                        {% static_href %}href="{% if lang == site.default_lang %}{{site.baseurl}}/{% else %}{{site.baseurl}}/{{ lang }}{% endif %}"{% endstatic_href %}
+                    >{{ lang }}</a>
+                {% endfor %}
+            </div>
         </header>
 
         <section class="intro-container">
@@ -29,9 +33,9 @@ lang: fr
             {% assign stack = site.stack | where:'lang', site.active_lang | sort: "position" %}
 
             {% for item in stack %}
-                <div>
-                    <div>{{ item.title }}</div>
-                    <div>{{ item.content }}</div>
+                <div class="stack-item-container">
+                    <div class="stack-item-title">{{ item.title }}</div>
+                    <div class="stack-item-content">{{ item.content }}</div>
                 </div>
             {% endfor %}
         </section>
