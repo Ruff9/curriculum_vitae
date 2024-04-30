@@ -46,7 +46,7 @@ lang: fr
             {% assign experiences = site.experiences | where:'lang', site.active_lang | sort: "start_date" | reverse %}
 
             {% for item in experiences %}
-                <div class="experience-container">
+                <div class="experience-item-container">
                     <h3 class="experience-company">{{ item.company }}</h3>
                     <div class="experience-title">{{ item.role }}</div>
                     <div class="experience-period">
@@ -64,7 +64,7 @@ lang: fr
             {% assign formations = site.formations | where:'lang', site.active_lang | sort: "year" | reverse %}
 
             {% for item in formations %}
-                <div>{{item.year}} {{ item.degree }}, {{ item.school }}</div>
+                <div class="formation-item-container">{{item.year}} {{ item.degree }}, {{ item.school }}</div>
             {% endfor %}
         </section>
     </div>
