@@ -2,12 +2,11 @@
   width: 100vw;
 
   background-color: $background;
-  color: $base-font-color;
+  color: $font-color;
   font-family: $base-font;
 
   padding-top: 20px;
   padding-bottom: 30px;
-  // font-family: "Montserrat", sans-serif;
 
   @media (min-width: $mobile-width) {
     padding-top: 30px;
@@ -35,6 +34,7 @@
 }
 
 .header {
+  margin-top: 15px;
   margin-bottom: 15px;
 
   @media (min-width: $mobile-width) {
@@ -47,9 +47,14 @@
 }
 
 .main-title {
+  font-family: $title-font;
+  font-weight: bold;
   font-size: 2em;
-  margin-top: 10px;
   margin-bottom: 5px;
+}
+
+.subtitle {
+  font-style: italic;
 }
 
 .langage-selector {
@@ -79,7 +84,11 @@
 }
 
 .secondary-title {
+  font-family: $title-font;
   font-size: 1.5em;
+  font-weight: bold;
+  color: $title-color;
+
   margin-bottom: 10px;
 
   @media (min-width: $mobile-width) {
