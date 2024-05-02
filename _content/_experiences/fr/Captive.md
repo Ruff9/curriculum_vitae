@@ -14,4 +14,4 @@ Je suis progressivement monté en compétence, pour devenir responsable de tout 
 
 Captive Studio a été fondée par un agiliste tendance Extreme programming. Nous avons menés des rétrospectives hebdomadaires, et pratiqué le pair programming au quotidien. Tout le code produit était réalisé en TDD.
 
-Technologies utilisées : Ruby on Rails, Backbone, Refinery, Cordova, Jenkins.
+Technologies : Ruby on Rails, Backbone, Refinery, Cordova, Jenkins.

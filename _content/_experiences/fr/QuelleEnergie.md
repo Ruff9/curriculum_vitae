@@ -16,4 +16,4 @@ Du fait d’un manque de disponibilités dans l’équipe produit, j’ai défin
 
 J’ai également accompagné les équipes techniques vers un process plus agile. J’ai animé les premières rétrospectives, mis en place des daily meetings, installé des outils comme Jira et Confluence. J’ai fait découvrir le TDD et le pair-programming aux développeurs de l’équipe.
 
-Technologies utilisées : Ruby on Rails (5.2), React, Typescript, Docker, Kubernetes, GCP, CircleCI, Thor
+Technologies : Ruby on Rails (5.2), React, Typescript, Docker, Kubernetes, GCP, CircleCI, Thor

@@ -29,7 +29,7 @@ lang: fr
 
         <section class="contact-container">
             <div>Contact: remy.maucourt (at) proton.me</div>
-            <div>Github: <a href="https://github.com/Ruff9" class="github-link">github.com/Ruff9</a></div>
+            <div>Github: <a href="https://github.com/Ruff9" class="github-link" target="_blank">github.com/Ruff9</a></div>
         </section>
 
         <section class="stack-container">
@@ -69,7 +69,10 @@ lang: fr
             {% assign formations = site.formations | where:'lang', site.active_lang | sort: "year" | reverse %}
 
             {% for item in formations %}
-                <div class="formation-item-container">{{item.year}} {{ item.degree }}, {{ item.school }}</div>
+                <div class="formation-item-container">
+                    <div class="formation-item-year">{{ item.year }}</div>
+                    <div class="formation-item-content">{{ item.degree }}, {{ item.school }}</div>
+                </div>
             {% endfor %}
         </section>
     </div>

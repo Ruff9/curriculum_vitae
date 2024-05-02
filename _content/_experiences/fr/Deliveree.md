@@ -11,4 +11,4 @@ end_date: 2019-01-30
 
 J’ai connecté les API de deux transporteurs à la plateforme, via des connecteurs séparés de la base de code principale. Ces librairies ont été livrées avec leurs tests unitaires et d’intégration, et une documentation de l’API tierce sur Postman.
 
-Technologies utilisées : Ruby on Rails, Thor, Foreman
+Technologies : Ruby on Rails, Thor, Foreman

@@ -19,4 +19,4 @@ Les objectifs ont été tenus : l’application a été déployée en premier da
 Le site public est disponible sur ce lien : mon-suivi-justice.beta.gouv.fr
 Le code du back-office sur celui-ci : github.com/betagouv/mon-suivi-justice
 
-Technologies utilisées : Ruby on Rails, Javascript ES6, Github actions, Scalingo
+Technologies : Ruby on Rails, Javascript ES6, Github actions, Scalingo

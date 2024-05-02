@@ -32,6 +32,7 @@
     max-width: 700px;
     margin-top: 50px;
     padding: 15px 30px;
+    text-align: justify;
   }
 }
 
@@ -100,10 +101,6 @@
 
 .intro-container {
   margin-bottom: 25px;
-
-  @media (min-width: $mobile-width) {
-    text-align: justify;
-  }
 }
 
 .contact-container {
@@ -164,10 +161,6 @@
 
 .experience-item-container {
   margin-bottom: 25px;
-
-  @media (min-width: $mobile-width) {
-    text-align: justify;
-  }
 }
 
 .experience-company {
@@ -181,4 +174,9 @@
 
 .formation-item-container {
   margin-bottom: 5px;
+  display: flex;
+}
+
+.formation-item-year {
+  margin-right: 10px;
 }

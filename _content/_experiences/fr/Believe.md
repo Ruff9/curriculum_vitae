@@ -12,4 +12,4 @@ J’ai été recruté pour unifier les process entre les deux sociétés. Nous a
 
 Le projet à été réalisé en alternance en les deux équipes, dans les locaux de Tunecore à New-York et ceux de Believe à Paris.
 
-Technologies utilisées : Ruby on Rails, Amazon SQS & SNS
+Technologies : Ruby on Rails, Amazon SQS & SNS
