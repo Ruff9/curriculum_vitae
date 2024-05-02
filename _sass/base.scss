@@ -18,7 +18,7 @@
   width: 95%;
   padding: 15px;
   margin: auto;
-
+  border-radius: 2px;
 
   p {
     margin-bottom: 10px;
@@ -99,11 +99,30 @@
 }
 
 .intro-container {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 
   @media (min-width: $mobile-width) {
     text-align: justify;
   }
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+
+  border: 2px solid $border-color;
+  border-radius: 2px;
+
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 10px 20px 13px;
+  width: fit-content;
+
+  line-height: 25px;
+}
+
+.github-link {
+  text-decoration: underline;
 }
 
 .stack-container {
