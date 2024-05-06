@@ -1,6 +1,4 @@
 .main-container {
-  width: 100vw;
-
   background-color: $background;
   color: $font-color;
   font-family: $base-font;
@@ -67,6 +65,7 @@
 
   @media (min-width: $mobile-width) {
     margin-top: 0;
+    margin-right: 10px;
   }
 }
 
@@ -100,26 +99,13 @@
 }
 
 .intro-container {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .contact-container {
-  display: flex;
-  flex-direction: column;
-
-  border: 2px solid $border-color;
-  border-radius: 2px;
-
   margin: auto;
   margin-bottom: 20px;
-  padding: 10px 20px 13px;
   width: fit-content;
-
-  line-height: 25px;
-}
-
-.github-link {
-  text-decoration: underline;
 }
 
 .stack-container {
