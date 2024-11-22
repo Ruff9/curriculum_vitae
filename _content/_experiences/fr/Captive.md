@@ -1,7 +1,7 @@
 ---
 lang: fr
 company: Captive Studio
-role: Développeur web
+role: Développeur web fullstack
 start_date: 2014-09-01
 end_date: 2017-03-30
 ---

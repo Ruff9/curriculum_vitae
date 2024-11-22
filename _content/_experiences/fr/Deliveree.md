@@ -1,11 +1,10 @@
 ---
 lang: fr
 company: Deliver.ee
-role: Développeur web
+role: Développeur web fullstack
 start_date: 2018-09-01
 end_date: 2019-01-30
 ---
-
 
 *Contexte* : Deliveree est une plateforme de logistique BtoB, qui permet à des commerces d’utiliser les services de divers transporteurs, et qui met à leur disposition l’infrastructure nécessaire.
 

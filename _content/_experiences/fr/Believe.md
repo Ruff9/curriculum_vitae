@@ -1,7 +1,7 @@
 ---
 lang: fr
 company: Believe
-role: Développeur web
+role: Développeur web fullstack
 start_date: 2019-07-01
 end_date: 2020-01-30
 ---

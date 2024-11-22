@@ -2,6 +2,7 @@
 lang: fr
 ---
 
-J’ai un parcours atypique et je suis ravi du point d’arrivée. Aujourd’hui je suis développeur web, avec un focus produit. Je peux prendre en charge tous les aspects techniques (développement front et back, mise en ligne, monitoring), et accompagner les équipes dans la réflexion sur les fonctionnalités.
+Je suis un lead developper, avec un focus produit. J'accompagne les équipes dans la réflexion sur les fonctionnalités et prends en charge l'implémentation technique : développement front et back, mise en ligne, monitoring. Je peux recruter des développeurs et former des équipes.
 
-Je suis également un craftsman, formé à l’Extreme programming. Je code en TDD des applications solides, et je cherche à développer la communication dans les équipes pour que tout le monde puisse avancer dans la sérénité.
+Je suis également un craftsman, formé à l’Extreme programming. Je suis convaincu que chaque équipe doit ajuster son process de travail en continu. Dans ce but, j'anime des rétrospectives et je facilite la communication, pour que tout le monde puisse avancer ensemble.
+
